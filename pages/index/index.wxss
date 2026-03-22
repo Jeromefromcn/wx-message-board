@@ -1,0 +1,89 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.loading-wrap,
+.empty-wrap {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16rpx;
+}
+
+.loading-text {
+  color: #999;
+  font-size: 28rpx;
+}
+
+.empty-icon {
+  font-size: 80rpx;
+}
+
+.empty-text {
+  color: #999;
+  font-size: 28rpx;
+}
+
+.message-list {
+  flex: 1;
+  padding: 20rpx;
+}
+
+.message-card {
+  display: flex;
+  background: #fff;
+  border-radius: 12rpx;
+  padding: 24rpx;
+  margin-bottom: 20rpx;
+  box-shadow: 0 2rpx 8rpx rgba(0, 0, 0, 0.06);
+  gap: 20rpx;
+}
+
+.avatar {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.message-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8rpx;
+}
+
+.nickname {
+  font-size: 28rpx;
+  font-weight: 600;
+  color: #333;
+}
+
+.content {
+  font-size: 30rpx;
+  color: #444;
+  line-height: 1.5;
+}
+
+.time {
+  font-size: 24rpx;
+  color: #999;
+}
+
+.post-btn-wrap {
+  padding: 24rpx 32rpx;
+  background: #fff;
+  border-top: 1rpx solid #eee;
+}
+
+.post-btn {
+  background: #07c160;
+  color: #fff;
+  border-radius: 12rpx;
+  font-size: 32rpx;
+  font-weight: 500;
+}

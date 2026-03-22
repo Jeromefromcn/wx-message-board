@@ -1,0 +1,29 @@
+<view class="container">
+  <!-- Loading state -->
+  <view wx:if="{{loading}}" class="loading-wrap">
+    <text class="loading-text">Loading...</text>
+  </view>
+
+  <!-- Empty state -->
+  <view wx:elif="{{messages.length === 0}}" class="empty-wrap">
+    <text class="empty-icon">&#x1F4AC;</text>
+    <text class="empty-text">No messages yet. Be the first!</text>
+  </view>
+
+  <!-- Message list -->
+  <scroll-view wx:else scroll-y class="message-list">
+    <view wx:for="{{messages}}" wx:key="_id" class="message-card">
+      <image class="avatar" src="{{item.avatarUrl || '/assets/default-avatar.png'}}" mode="aspectFill" />
+      <view class="message-body">
+        <text class="nickname">{{item.nickName || 'Anonymous'}}</text>
+        <text class="content">{{item.content}}</text>
+        <text class="time">{{item.createdAt}}</text>
+      </view>
+    </view>
+  </scroll-view>
+
+  <!-- Post button -->
+  <view class="post-btn-wrap">
+    <button class="post-btn" bindtap="goToPost">&#x270F;&#xFE0F; Write a Message</button>
+  </view>
+</view>

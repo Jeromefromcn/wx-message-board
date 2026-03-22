@@ -1,0 +1,35 @@
+<view class="container">
+  <view class="form">
+    <view class="field">
+      <text class="label">Your Name</text>
+      <input
+        class="input"
+        placeholder="Enter your name"
+        value="{{nickName}}"
+        bindinput="onNickNameInput"
+        maxlength="20"
+      />
+    </view>
+
+    <view class="field">
+      <text class="label">Message</text>
+      <textarea
+        class="textarea"
+        placeholder="Write something..."
+        value="{{content}}"
+        bindinput="onContentInput"
+        maxlength="500"
+        auto-height
+      />
+      <text class="char-count">{{content.length}}/500</text>
+    </view>
+
+    <button
+      class="submit-btn {{submitting ? 'disabled' : ''}}"
+      bindtap="submit"
+      disabled="{{submitting}}"
+    >
+      {{submitting ? 'Posting...' : 'Post Message'}}
+    </button>
+  </view>
+</view>
