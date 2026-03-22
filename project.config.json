@@ -1,5 +1,5 @@
 {
-  "appid": "YOUR_APPID_HERE",
+  "appid": "wx074207d657b65d2d",
   "projectname": "wx-message-board",
   "description": "WeChat mini-program message board with cloud development",
   "cloudfunctionRoot": "cloudfunctions/",
