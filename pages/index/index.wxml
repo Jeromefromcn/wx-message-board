@@ -6,7 +6,7 @@
 
   <!-- Empty state -->
   <view wx:elif="{{messages.length === 0}}" class="empty-wrap">
-    <text class="empty-icon">&#x1F4AC;</text>
+    <text class="empty-icon">💬</text>
     <text class="empty-text">No messages yet. Be the first!</text>
   </view>
 
@@ -24,6 +24,6 @@
 
   <!-- Post button -->
   <view class="post-btn-wrap">
-    <button class="post-btn" bindtap="goToPost">&#x270F;&#xFE0F; Write a Message</button>
+    <button class="post-btn" bindtap="goToPost">✏️ Write a Message</button>
   </view>
 </view>
